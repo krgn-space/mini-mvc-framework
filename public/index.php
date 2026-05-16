@@ -2,7 +2,10 @@
 
 require_once __DIR__ . '/../autoload.php';
 
-use app\controllers\IndexController;
+use core\Router;
 
-$controller = new IndexController();
-$controller->index();
+$router = new Router();
+
+require_once __DIR__ . '/../config/routes.php';
+
+$router->route($_SERVER['REQUEST_METHOD'], $_SERVER['REQUEST_URI']);
