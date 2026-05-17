@@ -3,6 +3,11 @@
 require_once __DIR__ . '/../autoload.php';
 
 use core\Router;
+use core\View;
+
+function view(string $view, array $data = []): void {
+    View::render($view, $data);
+}
 
 $router = new Router();
 

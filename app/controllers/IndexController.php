@@ -6,11 +6,6 @@ class IndexController
 {
     public function index()
     {
-        echo '<h1>Works</h1>';
-    }
-
-    public function show($id)
-    {
-        echo '<h1>Show ' . $id . '</h1>';
+        return view('index');
     }
 }
