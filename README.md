@@ -9,7 +9,7 @@
 2. Откройте терминал в корневой папке проекта
 3. Запустите встроенный веб-сервер PHP командой
     ```bash 
-      php -S localhost:8000 -t public/index.php
+      php -S localhost:8000 -t public
     ```
 4. Откройте в браузере адрес http://localhost:8000
 
